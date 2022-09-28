@@ -1,0 +1,19 @@
+{
+  "name": "mealstogoapi",
+  "version": "1.0.0",
+  "description": "API for meals to go",
+  "main": "app.js",
+  "repository": "https://github.com/ikechukwu-peter/mealstogoapi",
+  "author": "Ikechukwu Peter",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "node app.js"
+  },
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.3.16",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1"
+  }
+}
