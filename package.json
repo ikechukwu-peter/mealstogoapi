@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "node app.js"
+    "dev": "node app.js",
+    "start": "node app.js"
   },
   "dependencies": {
     "@googlemaps/google-maps-services-js": "^3.3.16",
