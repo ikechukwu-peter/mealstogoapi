@@ -5,6 +5,7 @@ module.exports.geocodeRequest = (req, res, client) => {
   const { city, mock } = url.parse(req.url, true).query;
   if (mock === "true") {
     const locationMock = locationsMock[city.toLowerCase()];
+    console.log("MOCK", locationMock);
     return res.json(locationMock);
   }
   client

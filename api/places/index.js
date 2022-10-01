@@ -18,11 +18,14 @@ const addGoogleImage = (restaurant) => {
 module.exports.placesRequest = (req, res, client) => {
   const { location, mock } = url.parse(req.url, true).query;
 
+  console.log(location, mock);
+
   if (mock === "true") {
     const data = mocks[location];
 
     if (data) {
       data.results.map(addMockImage);
+      console.log("DATA", data);
       return res.jsondata();
     }
   }
